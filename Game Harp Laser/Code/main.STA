@@ -1,0 +1,114 @@
+
+ROM used:   9856/16384 (30%)
+            9856/16384 (30%) including unused fragments
+
+            2.4 Average locations per line
+            14.9 Average locations per statement
+
+RAM used:   77/2048 (4%) at main() level
+            550/2048 (27%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  544   303  46  main.c
+   36     0   0  main.h
+  821     0   0  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.h
+ 2229   257  39  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h
+  456   100  15  ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+----- -----
+ 4086   660 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   0    1             @delay_ms1
+0    844   4   20  1121 10.1  CEIL_FLOOR
+0    122   1   10             @FLT
+0     60   0    4             @SFTOI
+0     54   0    2             @ITOF
+0    246   1   11             @MULFF
+0    632   3   16             @ADDFF
+0     28   0    4    44  1.9  ceil
+0    384   2   14             @DIVFF
+0     20   0    0             @const783
+0     82   0    3   760  4.5  lcd_read_byte
+0     86   0    2   262  3.7  lcd_read_nibble
+0     76   0    1   399  2.4  lcd_send_nibble
+0     82   0    3   415  3.7  lcd_send_byte
+0    134   1    2   704  5.0  lcd_init
+0     38   0    4   208  6.3  lcd_gotoxy
+0    108   1    1   354  4.7  lcd_putc
+0    752   4    2  1630  7.9  MAIN
+0     28   0    0             @const865
+0     28   0    0             @const866
+0     30   0    0             @const867
+0     32   0    0   432  3.3  @const868
+0    192   1    1   467  1.9  carregar
+0     16   0    0             @const873
+0     32   0    2             @PSTRINGC_802
+0      8   0    0             @const875
+0      4   0    0             @const876
+0      4   0    0             @const877
+0     12   0    0  8811 11.8  @const879
+0   2368  12  417 10124 12.3  tocar_musica
+0     70   0    5             @DIV1616
+0     18   0    0             @const896
+0     42   0    3             @PSTRINGCN_802
+0     44   0    3             @DIV88
+0    124   1    2             @PRINTF_U_802
+0     18   0    0             @const906
+0    192   1    9             @PRINTF_LU_802
+0     18   0    0  1385  7.4  @const910
+0    536   3   29  1385  7.4  salvar
+0     30   0    0  1385  7.4  @const916
+0    292   1    5  1381  8.2  listaMusicas
+0     14   0    0             @const921
+0     18   0    0             @const922
+0     18   0    0             @const923
+0     36   0    2  1280  8.4  @PSTRINGR_802
+0    402   2    5  1280  8.4  records
+0     18   0    0             @const928
+0     18   0    0             @const929
+0     18   0    0             @const932
+0     16   0    0  1290  7.7  @const933
+0    336   2   19  1290  7.7  menuPrincipal
+0     18   0    0             @const938
+0     18   0    0             @const939
+0     18   0    0             @const940
+0    328   2   16   475  4.7  qualificarPrecisao
+0     22   0    0   475  4.7  @const943
+0     24   0    0             @const944
+0     22   0    0             @const945
+0     24   0    0             @const946
+0     20   0    0             @const947
+0     28   0    0             @const948
+0     38   0    0             @goto11629
+0    118   1    2   304  3.6  animacaoLogo
+0     18   0    0             @const953
+0     18   0    0   149  1.3  @const954
+0     38   0    0   149  1.3  apagarLeds
+0    176   1    1   444  3.3  ledEffect
+0    104   1    1   432  3.3  notesToLeds
+ Inline         0   432  3.3  @cinit1
+
+Program metrics:
+    Functions               30
+    Statements              660
+    Comments                702
+    Volume (V)              61589
+    Difficulty (D)          166.4
+    Effort to implement (E) 10247058
+    Time to implement (T)   158 hours, 8 minutes
+    Est Delivered Bugs (B)  16
+    Cyclomatic Complexity   122
+    Maintainability (MI)    127
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  9852  22912  
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group >
+        <item android:title="@string/action_paired"
+            android:icon="@mipmap/ic_main_menu"
+            app:showAsAction="always"
+            android:id="@+id/action_paireds"/>
+        <item android:title="@string/stopRead"
+            android:id="@+id/actionStop"
+            android:icon="@mipmap/ic_stop"
+            app:showAsAction="always"
+            android:enabled="false"
+            android:visible="false"/>
+        <item android:title="@string/action_search_devices"
+            android:id="@+id/action_search_devices"
+            app:showAsAction="never"/>
+        <item android:title="@string/action_visible"
+            app:showAsAction="never"
+            android:id="@+id/action_visible"/>
+        <item android:title="@string/action_desconect"
+            app:showAsAction="never"
+            android:id="@+id/action_desconect"/>
+        <item android:title="Configurações"
+            android:id="@+id/action_configure"
+            app:showAsAction="always"
+            android:icon="@mipmap/ic_config" />
+    </group>
+
+</menu>

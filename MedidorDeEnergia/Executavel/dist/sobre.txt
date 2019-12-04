@@ -1,0 +1,11 @@
+﻿Eletric Timer é um sistema criado para ser executado em plataformas java, 
+de autoria da Super Xoke Developers que também são responsaveis por 
+sua licensa.
+
+Versão do produto: 
+Eletric Timer 1.0.0 (Build 201411181905)
+
+Atualizações: 
+Eletric Timer esta atualizado até a versão 1.0.0
+Java: 1.8.0_45; Java HotSpot(TM) 64-Bit Server VM 25.45-b02
+Sistema: Windows. 

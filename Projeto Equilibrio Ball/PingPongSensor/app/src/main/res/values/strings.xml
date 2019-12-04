@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PingPongSensor</string>
+    <string name="paired_devices">Dispositivos Pareados</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="action_search_devices">Buscar Dispositivos</string>
+    <string name="action_visible">Habilitar visibilidade</string>
+    <string name="action_paired">Pareados</string>
+    <string name="btn_start">Iniciar Leitura</string>
+    <string name="detectionBall">Detectar Bola</string>
+    <string name="title_activity_detection_ball">DetectionBall</string>
+    <string name="stopRead">Parar Leitura</string>
+    <string name="configure">Configurações</string>
+    <string name="action_desconect">Desconectar</string>
+
+
+</resources>

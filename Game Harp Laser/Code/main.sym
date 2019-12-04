@@ -1,0 +1,286 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-047 sound
+048     index_Nivel1
+049     index_Nivel2
+04A.0   flag_control
+04A.1   flag_ENTER
+04A.2   flag_CLOSE
+04A.3   flag_DOWN
+04A.4   flag_UP
+04B-04E atan2.y
+04B     MAIN.valor
+04C     MAIN.j
+04D     MAIN.pontuacao
+04E     animacaoLogo.x
+04E-05D menuPrincipal.tituloMenu
+04E     listaMusicas.index
+04E     lcd_init.i
+04E     ledEffect.i
+04E     records.index
+04E     MAIN.@SCRATCH1
+04E     carregar.@SCRATCH1
+04F     records.tituloMusicaAtual
+04F     tocar_musica.index
+04F     salvar.pontuacao
+04F-052 atan2.x
+04F     lcd_init.@SCRATCH1
+04F     MAIN.@SCRATCH2
+04F     listaMusicas.@SCRATCH1
+04F     animacaoLogo.@SCRATCH1
+050-117 tocar_musica.notas
+050     records.pontMusicaAtual
+050     salvar.index
+050     listaMusicas.@SCRATCH2
+051     salvar.address
+051     listaMusicas.@SCRATCH3
+051     records.@SCRATCH1
+052     salvar.aux
+052     listaMusicas.@SCRATCH4
+052     records.@SCRATCH2
+053-05C salvar.memoria
+053-056 atan2.z
+053     records.@SCRATCH3
+054     records.@SCRATCH4
+057.0   atan2.sign
+058     atan2.quad
+05D-066 salvar.memoria_index
+05E     menuPrincipal.index
+05F     @PSTRINGC_802.@SCRATCH1
+05F     menuPrincipal.@SCRATCH1
+060     @PSTRINGC_802.@SCRATCH2
+060     menuPrincipal.@SCRATCH2
+067     salvar.offset
+068     salvar.i
+069     salvar.j
+06A     salvar.@SCRATCH1
+06B     salvar.@SCRATCH2
+06C     salvar.@SCRATCH3
+06D     salvar.@SCRATCH4
+118-1DF tocar_musica.duracao
+1E0-1E3 tocar_musica.quant_Notas
+1E4-1EB tocar_musica.index_inicio
+1EC     tocar_musica.i
+1ED-1EE tocar_musica.acum
+1EF     tocar_musica.j
+1F0-1F1 tocar_musica.acertos
+1F2-1F3 tocar_musica.tempo_musica
+1F4     tocar_musica.acertosNota
+1F5-1F6 tocar_musica.duracao_nota
+1F7     tocar_musica.j
+1F8     tocar_musica.nota_Press_User
+1F9-1FC tocar_musica.pontuacao
+1FD     tocar_musica.pontuacao_Final
+1FE-201 @DIVFF.P1
+1FE     qualificarPrecisao.index
+1FE-201 ceil.x
+1FE     tocar_musica.@SCRATCH1
+1FF     qualificarPrecisao.acertos_nota
+1FF     tocar_musica.@SCRATCH2
+200-20B qualificarPrecisao.texto
+200     tocar_musica.@SCRATCH3
+201     @PSTRINGCN_802.P1
+201-202 @PRINTF_LU_802.P2
+201     notesToLeds.note
+201-202 @DIV1616.P1
+202-205 CEIL_FLOOR.x
+202-205 @DIVFF.P1
+202     @PSTRINGCN_802.@SCRATCH1
+203-204 @DIV1616.P1
+203     @PSTRINGCN_802.@SCRATCH2
+203     @PRINTF_LU_802.@SCRATCH1
+204     @PRINTF_LU_802.@SCRATCH2
+205     @DIV1616.@SCRATCH1
+205     @PRINTF_LU_802.@SCRATCH3
+206     CEIL_FLOOR.n
+206     @DIVFF.@SCRATCH1
+206     @PRINTF_LU_802.@SCRATCH4
+207-20A CEIL_FLOOR.y
+207     @DIVFF.@SCRATCH2
+207     @PRINTF_LU_802.@SCRATCH5
+208     @DIVFF.@SCRATCH3
+208     @PRINTF_LU_802.@SCRATCH6
+209     @DIVFF.@SCRATCH4
+209     @PRINTF_LU_802.@SCRATCH7
+20A     @DIVFF.@SCRATCH5
+20B-20E CEIL_FLOOR.res
+20B     @DIVFF.@SCRATCH6
+20C     @PRINTF_U_802.P1
+20C     @PSTRINGR_802.@SCRATCH1
+20C     qualificarPrecisao.@SCRATCH1
+20D     @PRINTF_U_802.P1
+20D     @PSTRINGR_802.@SCRATCH2
+20D     qualificarPrecisao.@SCRATCH2
+20E     @DIV88.P1
+20E     lcd_putc.c
+20F     @delay_ms1.P1
+20F     lcd_gotoxy.x
+20F-210 CEIL_FLOOR.l
+20F     @DIV88.P1
+210     lcd_gotoxy.y
+210     @DIV88.@SCRATCH1
+211     lcd_gotoxy.address
+211.0   CEIL_FLOOR.s
+212-215 @FLT.P1
+212-215 @MULFF.P2
+212-215 @SFTOI.P3
+212     CEIL_FLOOR.@SCRATCH1
+212     lcd_gotoxy.@SCRATCH1
+213     lcd_send_byte.address
+213     CEIL_FLOOR.@SCRATCH2
+214     lcd_send_byte.n
+214     CEIL_FLOOR.@SCRATCH3
+215     lcd_read_byte.low
+215     CEIL_FLOOR.@SCRATCH4
+215     lcd_send_byte.@SCRATCH1
+216-219 @MULFF.P1
+216-217 @ITOF.P2
+216-219 @ADDFF.P3
+216     lcd_send_nibble.n
+216     lcd_read_byte.high
+216-219 @FLT.P1
+217     lcd_read_nibble.n
+217     lcd_read_byte.@SCRATCH1
+218     lcd_read_nibble.@SCRATCH1
+21A-21D @ADDFF.P1
+21A     @FLT.@SCRATCH1
+21A     @MULFF.@SCRATCH1
+21B     @FLT.@SCRATCH2
+21B     @MULFF.@SCRATCH2
+21C     @MULFF.@SCRATCH3
+21E     @ADDFF.@SCRATCH1
+21F     @ADDFF.@SCRATCH2
+220     @ADDFF.@SCRATCH3
+221     @ADDFF.@SCRATCH4
+222     @ADDFF.@SCRATCH5
+223     @ADDFF.@SCRATCH6
+224     @ADDFF.@SCRATCH7
+225     @ADDFF.@SCRATCH8
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000014  LCD_INIT_STRING.data
+000018  @const865.call
+000034  @const866.call
+000050  @const867.call
+00006E  @const868.call
+00008E  @const943.call
+0000A4  @const944.call
+0000BC  @const945.call
+0000D2  @const946.call
+0000EA  @const947.call
+0000FE  @const948.call
+00011A  @const873.call
+00012A  @const875.call
+000132  @const876.call
+000136  @const877.call
+00013A  @const879.call
+000146  @const896.call
+000158  @const906.call
+00016A  @const910.call
+00017C  @const916.call
+00019A  @const921.call
+0001A8  @const922.call
+0001BA  @const923.call
+0001CC  @const928.call
+0001DE  @const929.call
+0001F0  @const932.call
+000202  @const933.call
+000212  @const938.call
+000224  @const939.call
+000236  @const940.call
+000248  @const953.call
+00025A  @const954.call
+00026C  @delay_ms1
+000294  lcd_send_nibble
+0002E0  lcd_read_nibble
+000336  lcd_read_byte
+000388  lcd_send_byte
+0003DA  lcd_init
+000460  lcd_gotoxy
+000486  lcd_putc
+0004F2  @PSTRINGC_802
+000512  animacaoLogo
+000588  @DIV88
+0005B4  @PRINTF_U_802
+000630  @PSTRINGR_802
+000654  menuPrincipal
+0007A4  listaMusicas
+0008C8  apagarLeds
+0008EE  notesToLeds
+000956  ledEffect
+000A06  carregar
+000AC6  @DIV1616
+000B0C  qualificarPrecisao
+000C54  @goto11629
+000C7A  @PSTRINGCN_802
+000CA4  @ITOF
+000CDA  @FLT
+000D54  @SFTOI
+000D90  @MULFF
+000E86  @ADDFF
+0010FE  CEIL_FLOOR
+00144A  ceil
+001466  @PRINTF_LU_802
+001526  @DIVFF
+0016A6  tocar_musica
+001FE6  salvar
+0021FE  records
+002390  @cinit1
+002390  MAIN
+0023AE  @cinit2
+
+Project Directory:
+    C:\Users\kreislerb\OneDrive\UFU\6° PERIODO\MICRO\Projeto\Codigo\
+
+Project Files:
+    main.c                                                  [15-dez-17 01:00  CRC=701E8B05]
+    main.h                                                  [07-dez-17 19:39  CRC=DB56EA36]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.h [21-jun-13 17:05  CRC=A157EDDE]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h [28-set-12 12:35  CRC=546412C9]
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c [23-ago-12 10:01  CRC=D28E8746]
+
+Source signature=E64E846E
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

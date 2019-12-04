@@ -1,0 +1,70 @@
+public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame inputFrame) {
+        mRgba = inputFrame.rgba();
+
+
+        Imgproc.cvtColor(mRgba,	grayImg,	Imgproc.COLOR_RGB2GRAY);
+        double	minDist=20;
+        double	cannyHighThreshold=150;
+        //Teste 1 accumlatorThreshold = 50
+        //Teste 2 accumlatorThreshold = 40
+        //Teste 3 accumlatorThreshold = 30  Apresentrou uma sensibilidade boa
+        //Teste 4 Manteve-se accumulator 30 e add filtro de gauss com s = 9,9   e 2,2     Melhorou
+        double	accumlatorThreshold=30;
+        //Size s = new Size(9,9);
+         //Imgproc.GaussianBlur(grayImg, filtroGauss, s,2,2);
+        // Imgproc.adaptiveThreshold(grayImage,grayImage,255,Imgproc.ADAPTIVE_THRESH_GAUSSIAN_C,Imgproc.THRESH_BINARY,11,2);
+        Imgproc.HoughCircles(grayImg,circles,Imgproc.CV_HOUGH_GRADIENT,1,minDist,cannyHighThreshold,accumlatorThreshold,0,0);
+
+
+        int	thickness=5;
+
+        Log.i("Circulos encontrados"," = "+circles.cols());
+        for	(int	i	=	0;	i	<	circles.cols();	i++){
+            double[] circle	=	circles.get(0,	i);
+            final double	centerX	=	circle[0], centerY	=	circle[1],	radius	=	circle[2];
+            Log.i("Posição Circulo", "X = "+centerX+"   Y: "+centerY+"  Raio: "+radius);
+            Point center	=	new	Point(centerX,	centerY);
+            // Imgproc.cvtColor(imagemFiltrada,	imagemFiltrada,	Imgproc.COLOR_GRAY2RGB);
+
+            Imgproc.circle(mRgba,	center,	(int)	radius,CONTOUR_COLOR,thickness);
+            Imgproc.circle(mRgba,	center,2, CENTER_COLOR,thickness);
+
+
+         /*   new Thread(new Runnable() {
+                public void run() {
+                    while (true){
+
+
+                        try {
+
+                            double[] pos = posicaoCorrigida(centerX,centerY,radius);
+                            NumberFormat format = NumberFormat.getInstance();
+                            format.setMaximumFractionDigits(1);
+                            pos[0] = Double.valueOf(format.format(pos[0]));
+                            pos[1] = Double.valueOf(format.format(pos[1]));
+                            pos[2] = Double.valueOf(format.format(pos[2]));
+
+
+                            byte[] data = (pos[0]+"#"+pos[1]+"$"+pos[2]).getBytes();
+                            MainActivity.connect.write(data);
+                            Log.i("Posição enviada: ", "#"+pos[0]+"X"+pos[1]+"Y"+pos[2]+"Raio");
+                            Thread.sleep(25);
+
+                        } catch (InterruptedException e) {
+                            e.getMessage();
+                        }
+                        catch(RuntimeException erro){
+
+                        }
+                    }
+
+                }
+            }).start();
+            */
+        }
+
+
+
+
+        return mRgba;
+    }

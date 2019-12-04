@@ -1,0 +1,67 @@
+﻿- Software Eletric Timer - Julho de 2015  
+
+-Eletric Timer - Super Xoque Developers, 2015. Desenvolvido para você.
+
+Este documento fornece as informações mais recentes e outras informações que 
+complementam a documentação do Eletric Timer.
+
+░  OBSERVAÇÕES GERAIS
+    Essa aplicação determina a quantidade de kilowatts queo     usuário consumiu por 
+    hora , dia ou mês, permitindo que o usuário tenha     conhecimento estatísticos dos seus 
+    dados , como : média , máximos e mínimos.
+
+
+>>> Para importar Dados:
+    1 - Clique no botão "Carregar Dados" na Pagina Inicial e selecione o arquivo com os dados do medidor 
+    para fazer a importação.
+
+    2 - Clique na aba "Arquivo" no canto superior esquerdo clique no menu arquivo, selecione a opção "Importar"
+    e selecione o arquivo com os dados do seu MedidorKW para fazer a importação.
+
+    3 - Aperte a tecla de atalho "F1" e selecione o arquivo desejado para fazer
+    a importação dos dados.
+
+>>> Para exportar Dados:
+    1 - Clique na aba "Arquivo" no canto superior esquerdo e selecione a opção "exportar" 
+    e selecione o local desejado para fazer a exportação dos dados.
+
+    2 - Aperte a tecla de atalho "F2" e selecione o local desejado para fazer a 
+    exportação dos dados.
+
+>>> Para visualizar Dados importados:
+    - Após a importação dos dados ,clique na aba "Dados" no canto superior esquerdo e 
+    selecione o parâmetro de visualização dos dados "Hora" ou "Dia" ou "Mês" e 
+    especifique o intervalo de tempo desejado e clique no botão "consultar" para 
+    visualizar os dados relativos a este intervalo.
+
+>>> Para visualizar a média , máximos e mínimos de Dados:
+    - Após consultar os dados clique na aba "Estatísticas" e será mostrado a média, 
+    máximos e mínimos.
+
+
+░  Atualizando o sistema operacional
+    Ao atualizar o sistema operacional para uma versão mais recente, é necessário
+    primeiro desinstalar o software Eletric Timer antes de atualizar o sistema e, 
+    em seguida, reinstalar o software Eletric Timer. Se você não reinstalar o 
+    software Eletric Timer alguns recursos podem não funcionar como esperado.
+
+░  Especificações:
+    Software compatível com Windows Vista/7/8/8.1 e Linux
+    Gratuito
+    Espaço livre necessário: 2Mb
+    Super Xoque Developers
+
+
+░  Software Desenvolvido por :
+    Kreisler Brenner
+    Raphael Santos
+    Caio Barroso
+
+░  Contato:
+    (38)9981-8251
+    (38)9197-1193
+    raphaelturans@hotmail.com 
+    kreisler_551@hotmail.com 
+    caiooliveira95@hotmail.com
+
+Super Xoque Developers.Todos os direitos reservados.  
